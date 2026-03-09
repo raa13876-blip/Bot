@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameMarket — Профиль</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="profile">
+  <header class="topbar container">
+    <a class="logo" href="index.html">🎮 GameMarket</a>
+    <nav class="nav-actions" id="navActions"></nav>
+  </header>
+
+  <main class="container profile-layout">
+    <section class="card">
+      <h2>Профиль</h2>
+      <div id="profileInfo"></div>
+      <a href="add-account.html" class="btn btn-primary mt-12">+ Новое объявление</a>
+    </section>
+
+    <section class="card">
+      <h2>Уведомления</h2>
+      <ul id="notificationsList" class="list"></ul>
+    </section>
+
+    <section class="card full-width">
+      <h2>Мои объявления</h2>
+      <div id="myListings" class="listing-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Мои продажи</h2>
+      <ul id="salesList" class="list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Отзывы</h2>
+      <ul id="reviewsList" class="list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

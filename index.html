@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameMarket — Маркетплейс игровых аккаунтов</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="topbar container">
+    <a class="logo" href="index.html">🎮 GameMarket</a>
+    <nav class="nav-actions" id="navActions"></nav>
+  </header>
+
+  <main class="container page-grid">
+    <section class="hero card">
+      <h1>Покупай и продавай игровые аккаунты безопасно</h1>
+      <p>Современный маркетплейс игровых аккаунтов в рублях (₽).</p>
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Поиск по игре или описанию" />
+        <select id="gameFilter"></select>
+        <select id="statusFilter">
+          <option value="all">Все статусы</option>
+          <option value="active">Продаётся</option>
+          <option value="sold">Продан</option>
+        </select>
+        <select id="sortFilter">
+          <option value="new">Сначала новые</option>
+          <option value="priceAsc">Цена: по возрастанию</option>
+          <option value="priceDesc">Цена: по убыванию</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Популярные игры</h2>
+      <div id="popularGames" class="tag-list"></div>
+    </section>
+
+    <section class="card full-width">
+      <div class="section-title-row">
+        <h2>Новые объявления</h2>
+        <a class="btn btn-primary" href="add-account.html">+ Добавить аккаунт</a>
+      </div>
+      <div id="listingsContainer" class="listing-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
